@@ -1,0 +1,29 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ProgramItem from '../components/ProgramItem.astro';
+import { getCollection } from 'astro:content';
+
+const allProgram = await getCollection('program');
+---
+<MainLayout title="Program">
+  <div class="max-w-4xl mx-auto">
+    <div class="mb-12">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Program</h1>
+      <div class="w-24 h-1.5 bg-brand rounded-full mb-8"></div>
+      <p class="text-xl text-gray-600">Rozpis tréninků a nadcházejících akcí.</p>
+    </div>
+    
+    <div class="space-y-6">
+      {allProgram.length > 0 ? allProgram.map(async (item) => {
+        const { Content } = await item.render();
+        return (
+          <ProgramItem title={item.data.title} date={item.data.date}>
+            <Content />
+          </ProgramItem>
+        );
+      }) : (
+        <p class="text-gray-500 italic bg-white p-8 rounded-xl border border-gray-100 shadow-sm text-center">Aktuálně není k dispozici žádný program.</p>
+      )}
+    </div>
+  </div>
+</MainLayout>

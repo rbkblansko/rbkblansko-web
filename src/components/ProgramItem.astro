@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  date?: string;
+}
+
+const { title, date } = Astro.props;
+---
+<div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-md border border-gray-100 mb-6 flex flex-col md:flex-row md:items-start gap-6 transition-all duration-300">
+  <div class="flex-shrink-0 mt-1">
+    <div class="w-12 h-12 bg-brand-light text-brand rounded-full flex items-center justify-center">
+      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    </div>
+  </div>
+  <div class="flex-grow">
+    <h3 class="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
+    {date && <p class="text-brand font-medium mb-4 inline-block bg-brand-light/50 px-3 py-1 rounded-full text-sm border border-brand/20">{date}</p>}
+    <div class="prose prose-gray prose-a:text-brand prose-a:no-underline hover:prose-a:underline max-w-none">
+      <slot />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout title="Kalendář">
+  <div class="max-w-6xl mx-auto h-full flex flex-col">
+    <div class="mb-8">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Kalendář akcí</h1>
+      <div class="w-24 h-1.5 bg-brand rounded-full mb-6"></div>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <p class="text-xl text-gray-600">Náš klubový kalendář pro členy.</p>
+        <a href="https://clenska-sekce-rbk.streamlit.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-brand hover:bg-brand-dark text-white font-bold py-2.5 px-6 rounded-full transition-colors shadow-sm group">
+          Otevřít na nové stránce
+          <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex-grow min-h-[700px] relative">
+      <!-- Fallback message -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center -z-10">
+        <div class="w-16 h-16 bg-brand-light rounded-full flex items-center justify-center mb-4">
+          <svg class="w-8 h-8 text-brand animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Načítání kalendáře...</h3>
+        <p class="text-gray-600 mb-6 max-w-md">Pokud se kalendář nezobrazí, váš prohlížeč může blokovat obsah třetích stran. Použijte prosím tlačítko výše pro otevření v novém okně.</p>
+      </div>
+      <iframe 
+        src="https://clenska-sekce-rbk.streamlit.app/?embedded=true" 
+        class="w-full h-full min-h-[700px] border-0 bg-transparent relative z-10"
+        title="Klubový kalendář RBK Blansko"
+        allow="fullscreen"
+      ></iframe>
+    </div>
+  </div>
+</MainLayout>

@@ -1,0 +1,26 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import NewsCard from '../../components/NewsCard.astro';
+import { getCollection } from 'astro:content';
+
+const allNews = await getCollection('novinky');
+const sortedNews = allNews.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+<MainLayout title="Novinky">
+  <div class="mb-12">
+    <h1 class="text-4xl font-extrabold text-gray-900 mb-4">Novinky</h1>
+    <div class="w-24 h-1.5 bg-brand rounded-full mb-8"></div>
+    <p class="text-xl text-gray-600">Přečtěte si, co je u nás nového.</p>
+  </div>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {sortedNews.map(news => (
+      <NewsCard 
+        title={news.data.title}
+        date={news.data.date}
+        summary={news.data.summary}
+        slug={news.slug}
+      />
+    ))}
+  </div>
+</MainLayout>

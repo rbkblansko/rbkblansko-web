@@ -1,0 +1,72 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+import { getCollection } from 'astro:content';
+import { getPath } from '../utils/paths';
+
+const allNews = await getCollection('novinky');
+const latestNews = allNews
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+---
+<MainLayout title="Úvod">
+  <div class="relative bg-gradient-to-br from-brand to-white rounded-3xl overflow-hidden mb-20 shadow-xl border border-brand/10">
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CiAgPGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMCwwLDAsMC4wNSkiLz4KPC9zdmc+')] opacity-50"></div>
+    <div class="relative px-6 py-24 md:py-36 md:px-16 text-center lg:text-left flex flex-col lg:flex-row items-center gap-12">
+      <div class="lg:w-1/2">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 tracking-tight leading-tight">
+          Vítejte v <span class="text-brand block md:inline">RBK Blansko</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-10 font-medium leading-relaxed max-w-2xl mx-auto lg:mx-0">
+          Jsme sportovní klub s tradicí. Přidejte se k nám a objevte radost z pohybu v přátelském kolektivu.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+          <a href={getPath('/o-klubu')} class="bg-brand hover:bg-brand-dark text-white font-bold py-4 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 text-center">
+            Více o nás
+          </a>
+          <a href={getPath('/program')} class="bg-white border-2 border-brand text-brand hover:bg-brand-light font-bold py-4 px-8 rounded-full transition-all duration-300 text-center">
+            Náš program
+          </a>
+        </div>
+      </div>
+      <div class="lg:w-1/2 hidden lg:block">
+        <!-- Vizuální prvek pro homepage místo prázdného místa -->
+        <div class="relative w-full aspect-square max-w-md mx-auto">
+          <div class="absolute inset-0 bg-brand/20 rounded-full blur-3xl animate-pulse"></div>
+          <div class="relative h-full w-full bg-gradient-to-tr from-brand-light to-white rounded-3xl border-8 border-white shadow-2xl flex items-center justify-center rotate-3 transform hover:rotate-0 transition-transform duration-500">
+             <span class="text-6xl text-brand opacity-50">RBK</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="mb-20">
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 gap-4">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold text-gray-900 relative inline-block">
+          Nejnovější zprávy
+          <span class="absolute -bottom-2 left-0 w-1/2 h-1.5 bg-brand rounded-full"></span>
+        </h2>
+        <p class="text-gray-500 mt-4">Co se u nás v poslední době událo</p>
+      </div>
+      <a href={getPath('/novinky')} class="group flex items-center text-brand font-semibold hover:text-brand-dark transition-colors">
+        Zobrazit vše 
+        <span class="bg-brand-light p-2 rounded-full ml-3 group-hover:bg-brand/20 transition-colors">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </span>
+      </a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {latestNews.map(news => (
+        <NewsCard 
+          title={news.data.title}
+          date={news.data.date}
+          summary={news.data.summary}
+          slug={news.slug}
+        />
+      ))}
+    </div>
+  </section>
+</MainLayout>
