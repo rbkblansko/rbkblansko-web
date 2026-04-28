@@ -1,12 +1,9 @@
 ---
-title: "Rozpis tréninků - Květen 2024"
-date: "Květen 2024"
+title: "Rozpis tréninků: 2025/2026"
+date: "2025/2026"
 ---
 
-Pravidelné tréninky budou probíhat podle následujícího rozpisu:
+Pravidelné tréninky probíhají podle následujícího rozpisu:
 
-- **Pondělí:** 16:00 - 18:00
-- **Středa:** 16:00 - 18:00
-- **Pátek:** 15:00 - 17:00
-
-Místo: Městská sportovní hala Blansko
+- **Úterý:** 17:45 – 18:45 kondiční trénink Blansko
+- **Čtvrtek:** 17:30 – 19:30 mapový trénink
