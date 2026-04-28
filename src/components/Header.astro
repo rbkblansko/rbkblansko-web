@@ -3,6 +3,7 @@ import { getPath } from '../utils/paths';
 
 // aktuální cesta (bez trailing /)
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isHome = currentPath === '/' || currentPath === '';
 
 const links = [
   { href: getPath('/'), path: '/', label: 'Úvod' },
@@ -14,7 +15,7 @@ const links = [
 ];
 
 const isActive = (path: string) => {
-  if (path === '/') return currentPath === '/';
+  if (path === '/') return isHome;
   return currentPath === path || currentPath.startsWith(`${path}/`);
 };
 ---
