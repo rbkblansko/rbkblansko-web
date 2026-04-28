@@ -10,7 +10,7 @@ const links = [
   { href: getPath('/kontakty'), label: 'Kontakty' }
 ];
 
-const isActive = (href) => {
+const isActive = (href: string) => {
   const path = Astro.url.pathname;
 
   if (href === getPath('/')) {
