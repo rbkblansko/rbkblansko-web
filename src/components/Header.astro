@@ -9,6 +9,17 @@ const links = [
   { href: getPath('/kalendar'), label: 'Kalendář' },
   { href: getPath('/kontakty'), label: 'Kontakty' }
 ];
+
+const isActive = (href) => {
+  const path = Astro.url.pathname;
+
+  if (href === getPath('/')) {
+    return path === '/';
+  }
+
+  return path.startsWith(href);
+};
+
 ---
 <header class="fixed top-0 w-full bg-white shadow-sm z-50 border-b border-gray-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
