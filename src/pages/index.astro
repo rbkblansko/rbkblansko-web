@@ -29,13 +29,13 @@ const latestNews = allNews
           </a>
         </div>
       </div>
-      <div class="lg:w-1/2 hidden lg:block">
-        <!-- Vizuální prvek pro homepage místo prázdného místa -->
-        <div class="relative w-full aspect-square max-w-md mx-auto">
-          <div class="absolute inset-0 bg-brand/20 rounded-full blur-3xl animate-pulse"></div>
-          <div class="relative h-full w-full bg-gradient-to-tr from-brand-light to-white rounded-3xl border-8 border-white shadow-2xl flex items-center justify-center rotate-3 transform hover:rotate-0 transition-transform duration-500">
-             <span class="text-6xl text-brand opacity-50">RBK</span>
-          </div>
+      <div class="lg:w-1/2">
+  <img
+    src={getPath('/images/hero-rbk.png')}
+    alt="Orientační běh RBK Blansko"
+    class="w-full max-w-xl mx-auto rounded-3xl shadow-2xl border-8 border-white object-cover"
+  />
+</div>
         </div>
       </div>
     </div>
