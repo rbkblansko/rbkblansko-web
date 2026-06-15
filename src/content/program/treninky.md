@@ -1,3 +1,8 @@
+---
+title: "Rozpis tréninků: 2025/2026"
+date: 2025-09-01
+---
+
 Pravidelné tréninky probíhají podle následujícího rozpisu:
 
 ## Úterý
