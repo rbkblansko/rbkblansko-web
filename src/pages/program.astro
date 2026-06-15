@@ -132,8 +132,14 @@ import { getPath } from '../utils/paths';
       </div>
 
       <p class="mt-12 pt-8 border-t border-gray-200 text-gray-700">
-        Podrobný rozpis dle kalendáře v <span class="text-orange-600 font-semibold">Přihlašovacím systému</span>.
-      </p>
+  Podrobný rozpis dle kalendáře v
+  <a
+    href={getPath('/kalendar')}
+    class="text-orange-600 font-semibold hover:underline"
+  >
+    Přihlašovacím systému
+  </a>.
+</p>
     </section>
   </div>
 </MainLayout>
