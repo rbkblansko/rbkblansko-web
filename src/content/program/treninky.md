@@ -1,6 +1,7 @@
 ---
 title: "Rozpis tréninků: 2025/2026"
-date: 2025-09-01
+date: 2025-06-01
+period: "2025/2026"
 ---
 
 Pravidelné tréninky probíhají podle následujícího rozpisu:
