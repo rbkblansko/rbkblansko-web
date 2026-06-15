@@ -5,11 +5,14 @@ date: "2025/2026"
 
 Pravidelné tréninky probíhají podle následujícího rozpisu:
 
-## Úterý
+---
 
-**Sportovní ostrov Ludvíka Daňka a okolí**
+<h1><img src="/images/lampion.png" width="28" style="display:inline-block; vertical-align:middle; margin-right:10px;" alt=""> Úterý</h1>
 
-**Všichni**
+### Sportovní ostrov Ludvíka Daňka a okolí
+
+#### Všichni
+
 - trailový běh
 - běh ve volném terénu
 - atletický dráhový trénink
@@ -17,53 +20,68 @@ Pravidelné tréninky probíhají podle následujícího rozpisu:
 - cvičení síly, rychlosti a obratnosti
 - plyometrie
 
-## Pondělí / Středa
+---
 
-**Stadion ASK Blansko**
+<h1><img src="/images/lampion.png" width="28" style="display:inline-block; vertical-align:middle; margin-right:10px;" alt=""> Pondělí / Středa</h1>
 
-**Dorost**
+### Stadion ASK Blansko
+
+#### Dorost
+
 - individuální atletický dráhový trénink dle plánu
 
-## Čtvrtek
+---
 
-### Listopad – březen
+<h1><img src="/images/lampion.png" width="28" style="display:inline-block; vertical-align:middle; margin-right:10px;" alt=""> Čtvrtek</h1>
 
-**Tělocvična ZŠ Salmova**
+<h2><img src="/images/lampion.png" width="22" style="display:inline-block; vertical-align:middle; margin-right:8px;" alt=""> Listopad – březen</h2>
 
-**17:30**
+### Tělocvična ZŠ Salmova
+
+#### 17:30
+
 - mapová teorie
 
-**18:00**
+#### 18:00
 
-**Žactvo**
+##### Žactvo
+
 - pohybové aktivity v tělocvičně
 - rozvoj pohybových schopností
 - nácvik běhu
 - hry
 
-**Dorost**
+##### Dorost
+
 - výběh
 - cvičení síly, rychlosti a obratnosti
 - plyometrie
 
-**19:00**
+#### 19:00
 
-**Dorost, dospělí**
+##### Dorost, dospělí
+
 - posilování
 
-### Duben – říjen
+---
 
-**Lesy v okolí Blanska**
+<h2><img src="/images/lampion.png" width="22" style="display:inline-block; vertical-align:middle; margin-right:8px;" alt=""> Duben – říjen</h2>
 
-**Všichni**
+### Lesy v okolí Blanska
+
+#### Všichni
+
 - mapový trénink
 - nácvik práce s buzolou
-- mapových a navigačních technik
+- nácvik mapových a navigačních technik
 - běh volným terénem
 
-## Pátek / Neděle
+---
 
-**Všichni**
+<h1><img src="/images/lampion.png" width="28" style="display:inline-block; vertical-align:middle; margin-right:10px;" alt=""> Pátek / Neděle</h1>
+
+#### Všichni
+
 - noční orientační běh
 - mapový trénink
 - nácvik mapových a navigačních technik
