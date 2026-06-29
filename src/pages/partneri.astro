@@ -1,10 +1,10 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import PartnerCard from '../components/PartnerCard.astro';
 ---
 
 <MainLayout title="Partneři">
   <div class="max-w-6xl mx-auto">
-
     <div class="mb-12 text-center">
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4">
         Partneři
@@ -17,83 +17,30 @@ import MainLayout from '../layouts/MainLayout.astro';
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <PartnerCard
+        name="Český orienťák"
+        logo="/images/partneri/cesky-orientak.png"
+        url="https://www.ceskyorientak.cz/"
+      />
 
-  <a
-    href="https://www.ceskyorientak.cz/"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
-  >
-    <div class="h-20 flex items-center justify-center">
-      <img
-        src="/images/partneri/cesky-orientak.png"
-        alt="Český orienťák"
-        class="h-12 w-auto object-contain"
+      <PartnerCard
+        name="RAWET s.r.o."
+        logo="/images/partneri/rawet.jpg"
+        url="https://www.rawet.cz/"
+      />
+
+      <PartnerCard
+        name="Průmyslová keramika"
+        logo="/images/partneri/prumker.jpg"
+        url="https://prumyslova-keramika.cz/"
+      />
+
+      <PartnerCard
+        name="Zdravé daně"
+        logo="/images/partneri/zd.jpg"
+        url="https://www.zdravedane.cz/"
       />
     </div>
-
-    <h3 class="mt-5 font-bold text-gray-900">
-      Český orienťák
-    </h3>
-  </a>
-
-  <a
-  href="https://www.rawet.cz/"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
->
-  <div class="h-20 flex items-center justify-center">
-    <img
-      src="/images/partneri/rawet.jpg"
-      alt="RAWET s.r.o."
-      class="h-12 w-auto object-contain"
-    />
   </div>
-
-  <h3 class="mt-5 font-bold text-gray-900">
-    RAWET s.r.o.
-  </h3>
-</a>
-
-  <a
-  href="https://prumyslova-keramika.cz/"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
->
-  <div class="h-20 flex items-center justify-center">
-    <img
-  src="/images/partneri/prumker.jpg"
-  alt="Průmyslová keramika"
-  class="h-12 w-auto object-contain"
-/>
-  </div>
-
-  <h3 class="mt-5 font-bold text-gray-900">
-    Průmyslová keramika
-  </h3>
-</a>
-
-  <a
-  href="https://www.zdravedane.cz/"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-center"
->
-  <div class="h-20 flex items-center justify-center">
-    <img
-  src="/images/partneri/zd.jpg"
-  alt="Zdravé daně"
-  class="h-12 w-auto object-contain"
-/>
-  </div>
-
-  <h3 class="mt-5 font-bold text-gray-900">
-    Zdravé daně
-  </h3>
-</a>
-
-</div>
 </MainLayout>
