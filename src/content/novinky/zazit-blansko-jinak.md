@@ -4,7 +4,7 @@ date: 2026-08-20
 summary: "Přijďte si vyzkoušet orientační běh v rámci akce Zažít Blansko jinak."
 ---
 
-## Orienťák pro Blaněnsko – Zažít Blansko jinak
+## Orienťák pro Blanensko – Zažít Blansko jinak
 
 Procházel jsi zámeckou zahradu s mapou v ruce?
 

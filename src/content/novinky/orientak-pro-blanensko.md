@@ -1,10 +1,10 @@
 ---
-title: "Orienťák pro Blaněnsko"
+title: "Orienťák pro Blanensko"
 date: 2026-08-20
 summary: "Jednodenní hra s prvky orientačního běhu na příměstských táborech SVČ Blansko – SENZARO."
 ---
 
-## Orienťák pro Blaněnsko
+## Orienťák pro Blanensko
 
 Jednodenní hra s prvky orientačního běhu na příměstských táborech **SVČ Blansko – SENZARO**.
 
